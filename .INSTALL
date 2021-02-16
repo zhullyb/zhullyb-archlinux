@@ -10,5 +10,7 @@ post_install() {
     systemctl enable sddm
     $ECHO "\033[36m******************************\033[0m"
     $ECHO "\033[36m*   Remember to run Passwd   *\033[0m"
+    $ECHO "\033[36m*   and install xorg plasma  *\033[0m"
+    $ECHO "\033[36m*   and sddm                 *\033[0m"
     $ECHO "\033[36m******************************\033[0m"
 }
