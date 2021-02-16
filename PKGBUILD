@@ -9,9 +9,6 @@ arch=('x86_64')
 url="https://github.com/zhullyb/zhullyb-archlinux.git"
 license=()
 depends=(
-    xorg
-    sddm
-    plasma
     dolphin
     kate
     kdialog
@@ -22,6 +19,7 @@ depends=(
     neofetch
     bash-completion
     htop
+    networkmanager
     )
 makedepends=()
 source=("git+https://github.com/zhullyb/zhullyb-archlinux.git")

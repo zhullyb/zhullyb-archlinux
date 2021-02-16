@@ -1,11 +1,14 @@
 #!/bin/sh
 
-post_install() {
+pre_install() {
     useradd -m -G wheel zhullyb
+    pacman -S xorg sddm plasma --noconfirm
 }
 
-post_upgrade() {
+post_install() {
     local-gen
+    systemctl enable NetworkManager
+    systemctl enable sddm
     $ECHO "\033[36m******************************\033[0m"
     $ECHO "\033[36m*   Remember to run Passwd   *\033[0m"
     $ECHO "\033[36m******************************\033[0m"
