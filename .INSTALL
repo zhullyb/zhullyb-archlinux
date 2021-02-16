@@ -2,7 +2,6 @@
 
 pre_install() {
     useradd -m -G wheel zhullyb
-    pacman -S xorg sddm plasma --noconfirm
 }
 
 post_install() {
